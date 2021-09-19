@@ -1,0 +1,13 @@
+
+1squid:S1220""Move this file to a named package.
+^squid:S2583"DChange this condition so that it does not always evaluate to "false"(×²”Éùÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ñšÔ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(‹Òªıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(©Êû±ùÿÿÿÿ
+<squid:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ñšÔ

@@ -1,0 +1,20 @@
+
+_squid:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(Èñ¾„ýÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(Â¹ïž
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(»ä÷ù
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(»ä÷ù
+1squid:S1643"Use a StringBuilder instead.(¢ñ­¢
+6squid:S1643"Use a StringBuilder instead.(¼‡ ßûÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(¤ô“â
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(Â¹ïž
+_squid:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(Èñ¾„ýÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(¤ô“â
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+1squid:S1220""Move this file to a named package.

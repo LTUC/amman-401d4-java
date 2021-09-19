@@ -1,0 +1,9 @@
+
+Dsquid:S1066"/Merge this if statement with the enclosing one.(´ÄÅ…
+_squid:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(Èñ¾„ýÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+1squid:S1220""Move this file to a named package.
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(ËòÓÜÿÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÆÎ±Üûÿÿÿÿ

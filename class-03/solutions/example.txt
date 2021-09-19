@@ -1,0 +1,7 @@
+token token token token
+this is a new line with words
+not everything in the file is a word
+sometimes you can have as many as 99 numbers
+or even more, like 400!
+
+but when do you really know when a file is done?
