@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create A Post</title>
+</head>
+<body>
+
+<div>
+    <!-- action is the path to our POST action, method = post -->
+    <form action="/v2/posts" method="post">
+        <!-- boring html inputs! the "name" matches the @RequestParam's on the controller -->
+        <p>Author</p><input type="text" name="author"/></br>
+        <p>Content</p><input type="text" name="content"/></br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<ul th:each="post: ${posts}">
+    <p> Id <span th:text="${post.id}"></span></p>
+    <p> Author <span th:text="${post.author}"></span></p>
+    <p> Content <span th:text="${post.content}"></span></p>
+    <p> Created <span th:text="${post.created}"></span></p>
+</ul>
+
+</body>
+</html>
