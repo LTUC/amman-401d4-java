@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Single Post</title>
+</head>
+<body>
+
+<!--<p th:text="'Id => ' + ${post.id}"></p>-->
+<!--<p th:text="'Author => ' + ${post.appUser.username}"></p>-->
+<!--<p th:text="'Content => ' + ${post.content}"></p>-->
+
+<ul th:each="post: ${authorPost}">
+    <p> Id <span th:text="${post.id}"></span></p>
+    <p> Author <span th:text="${post.user.username}"></span></p>
+    <p> Content <span th:text="${post.content}"></span></p>
+    <p> Created <span th:text="${post.created}"></span></p>
+</ul>
+
+</body>
+</html>

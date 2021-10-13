@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create A Post</title>
+</head>
+<body>
+
+<h1 th:text="'Create a new Post ' + ${username}"></h1>
+
+<div>
+    <!-- action is the path to our POST action, method = post -->
+    <form action="/v2/posts" method="post">
+        <!-- boring html inputs! the "name" matches the @RequestParam's on the controller -->
+        <p>Author</p><input type="text" name="user"/></br>
+        <p>Content</p><input type="text" name="content"/></br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<ul th:each="post: ${posts}">
+    <p> Id <span th:text="${post.id}"></span></p>
+    <p> Author <span th:text="${post.user.username}"></span></p>
+    <p> Content <span th:text="${post.content}"></span></p>
+    <p> Created <span th:text="${post.created}"></span></p>
+</ul>
+
+<p>
+    <span>List of Post</span>
+</p>
+<div th:switch="${posts}">
+    <h2 th:case="null">No Posts yet!</h2>
+    <div th:case="*">
+        <h2>Posts</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Username</th>
+                <th>Content</th>
+                <th>Created</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="post : ${posts}">
+                <td th:text="${post.id}"></td>
+                <td th:text="${post.user.username}"></td>
+                <td th:text="${post.content}"></td>
+                <td th:text="${post.created}"></td>
+                <td><a th:href="@{/edit/{id}(id=${post.id})}">Edit</a></td>
+                <td><a th:href="@{/delete/{id}(id=${post.id})}">Delete</a></td>
+                <td><a th:href="@{/view/{id}(id=${post.id})}">View</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <p><a href="/v2/posts">Add a new post</a></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Author</title>
+</head>
+<body>
+
+<div>
+    <!-- action is the path to our POST action, method = post -->
+    <form action="/signup/users" method="post">
+        <!-- boring html inputs! the "name" matches the @RequestParam's on the controller -->
+        <p>Username</p><input type="text" name="username"/></br>
+        <p>Email</p><input type="email" name="email"/></br>
+        <p>Password</p><input type="password" name="password"/></br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
