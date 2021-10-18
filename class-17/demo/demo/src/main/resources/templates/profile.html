@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+</head>
+<body>
+
+<h2>Welcome to <span th:text="${username}"></span> 's profile</h2>
+
+<p th:text="'My department is :' + ${department.getName()}"></p>
+
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
+</body>
+</html>

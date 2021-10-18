@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+
+<form method="POST" th:action="@{/signup/users}">
+    <div><label for="username">Username : <input id="username" name="username" type="text"></label></div>
+    <div><label for="password">Password : <input id="password" name="password" type="text"></label></div>
+<!--    <div><label for="department">Department : <input id="department" name="department" type="number"></label></div>-->
+    <p>department</p>
+    <select name="department">
+        <option th:each="department : ${departments}" th:value="${department.id}" th:text="${department.name}">
+        </option>
+    </select>
+
+    <p>Role</p>
+    <select name="role">
+        <option th:each="role : ${roles}" th:value="${role.id}" th:text="${role.name}">
+        </option>
+    </select>
+    <div><input type="submit" value="Submit"/></div>
+</form>
+
+</body>
+</html>
