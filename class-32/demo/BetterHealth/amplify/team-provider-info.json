@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-betterhealth-dev-151347-authRole",
+      "UnauthRoleArn": "arn:aws:iam::911843619969:role/amplify-betterhealth-dev-151347-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::911843619969:role/amplify-betterhealth-dev-151347-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-betterhealth-dev-151347-deployment",
+      "UnauthRoleName": "amplify-betterhealth-dev-151347-unauthRole",
+      "StackName": "amplify-betterhealth-dev-151347",
+      "StackId": "arn:aws:cloudformation:us-west-2:911843619969:stack/amplify-betterhealth-dev-151347/b839c020-4095-11ec-87a9-02f7749fac09",
+      "AmplifyAppId": "d2fvnlbd9yaed5"
+    }
+  }
+}
