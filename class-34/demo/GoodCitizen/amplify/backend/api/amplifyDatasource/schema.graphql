@@ -1,0 +1,19 @@
+type User @model {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  nationalID: Float!
+  points: Int
+  email: String
+  number: String
+  logs: [Log] @connection(keyName: "byUser", fields: ["id"])
+}
+
+type Log @model @key(name: "byUser", fields: ["userId"]) {
+  id: ID!
+  name: String!
+  description: String
+  latitude: String
+  longitude: String
+  userId: ID!
+}

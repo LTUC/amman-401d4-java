@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-goodcitizen-dev-113215-authRole",
+      "UnauthRoleArn": "arn:aws:iam::911843619969:role/amplify-goodcitizen-dev-113215-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::911843619969:role/amplify-goodcitizen-dev-113215-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-goodcitizen-dev-113215-deployment",
+      "UnauthRoleName": "amplify-goodcitizen-dev-113215-unauthRole",
+      "StackName": "amplify-goodcitizen-dev-113215",
+      "StackId": "arn:aws:cloudformation:us-west-2:911843619969:stack/amplify-goodcitizen-dev-113215/f0552620-413f-11ec-902e-065407252d25",
+      "AmplifyAppId": "d210q1mjrxh7az"
+    }
+  }
+}

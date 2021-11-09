@@ -1,0 +1,145 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateUser {
+  onCreateUser {
+    id
+    firstName
+    lastName
+    nationalID
+    points
+    email
+    number
+    logs {
+      items {
+        id
+        name
+        description
+        latitude
+        longitude
+        userId
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    id
+    firstName
+    lastName
+    nationalID
+    points
+    email
+    number
+    logs {
+      items {
+        id
+        name
+        description
+        latitude
+        longitude
+        userId
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    id
+    firstName
+    lastName
+    nationalID
+    points
+    email
+    number
+    logs {
+      items {
+        id
+        name
+        description
+        latitude
+        longitude
+        userId
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateLog {
+  onCreateLog {
+    id
+    name
+    description
+    latitude
+    longitude
+    userId
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateLog {
+  onUpdateLog {
+    id
+    name
+    description
+    latitude
+    longitude
+    userId
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteLog {
+  onDeleteLog {
+    id
+    name
+    description
+    latitude
+    longitude
+    userId
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
