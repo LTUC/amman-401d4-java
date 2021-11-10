@@ -1,0 +1,73 @@
+# this is an auto generated file. This will be overwritten
+query GetUser($id: ID!) {
+  getUser(id: $id) {
+    id
+    firstName
+    lastName
+    nationalID
+    email
+    number
+    reports {
+      items {
+        id
+        title
+        description
+        userID
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+query ListUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      firstName
+      lastName
+      nationalID
+      email
+      number
+      reports {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetProblem($id: ID!) {
+  getProblem(id: $id) {
+    id
+    title
+    description
+    userID
+    createdAt
+    updatedAt
+  }
+}
+query ListProblems(
+  $filter: ModelProblemFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listProblems(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      title
+      description
+      userID
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
