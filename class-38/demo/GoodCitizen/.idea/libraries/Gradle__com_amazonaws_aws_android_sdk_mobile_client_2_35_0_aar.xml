@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-android-sdk-mobile-client:2.35.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a39cfb797ee58781ef2882f633c72c30/aws-android-sdk-mobile-client-2.35.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a39cfb797ee58781ef2882f633c72c30/aws-android-sdk-mobile-client-2.35.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a39cfb797ee58781ef2882f633c72c30/aws-android-sdk-mobile-client-2.35.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-mobile-client/2.35.0/e0087df01783890e7f6b19b4ff1f1ccd09dc3b19/aws-android-sdk-mobile-client-2.35.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

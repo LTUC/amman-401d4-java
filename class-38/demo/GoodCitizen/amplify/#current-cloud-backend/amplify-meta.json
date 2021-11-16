@@ -1,0 +1,124 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-goodcitizen-dev-164722-authRole",
+			"UnauthRoleArn": "arn:aws:iam::911843619969:role/amplify-goodcitizen-dev-164722-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::911843619969:role/amplify-goodcitizen-dev-164722-authRole",
+			"Region": "us-west-2",
+			"DeploymentBucketName": "amplify-goodcitizen-dev-164722-deployment",
+			"UnauthRoleName": "amplify-goodcitizen-dev-164722-unauthRole",
+			"StackName": "amplify-goodcitizen-dev-164722",
+			"StackId": "arn:aws:cloudformation:us-west-2:911843619969:stack/amplify-goodcitizen-dev-164722/f5fa4b10-416b-11ec-85fe-06c1d1fbbdb9",
+			"AmplifyAppId": "di64vujsj5zif"
+		}
+	},
+	"api": {
+		"goodcitizen": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"apiKeyExpirationDays": 40,
+							"description": "goodcitizenAPIKey"
+						}
+					},
+					"additionalAuthenticationProviders": []
+				},
+				"GraphQLAPIIdOutput": "gjpmwffr75ewhid2qz4f6i3dja",
+				"GraphQLAPIEndpointOutput": "https://qi64kmxd3fbxhjr6jzqokrb7ve.appsync-api.us-west-2.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-l64dh2hxr5czpb7jcnup3acdyu"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-goodcitizen-dev-164722-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apigoodcitizen"
+			},
+			"lastPushTimeStamp": "2021-11-15T08:47:47.603Z",
+			"lastPushDirHash": "0+tKam8rJieJiKFhDVeYanMN+7M="
+		}
+	},
+	"auth": {
+		"goodcitizene8d9bc73": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false,
+			"frontendAuthConfig": {
+				"loginMechanisms": [
+					"EMAIL"
+				],
+				"signupAttributes": [
+					"EMAIL"
+				],
+				"passwordProtectionSettings": {
+					"passwordPolicyMinLength": 8,
+					"passwordPolicyCharacters": []
+				},
+				"mfaConfiguration": "OFF",
+				"mfaTypes": [
+					"SMS"
+				],
+				"verificationMechanisms": [
+					"EMAIL"
+				]
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-goodcitizen-dev-164722-deployment/amplify-cfn-templates/auth/goodcitizene8d9bc73-cloudformation-template.yml",
+				"logicalId": "authgoodcitizene8d9bc73"
+			},
+			"lastPushTimeStamp": "2021-11-15T08:47:47.612Z",
+			"output": {
+				"UserPoolId": "us-west-2_WTswjhpHi",
+				"AppClientIDWeb": "2r47kjcn3p29o1q0kfmdd604rc",
+				"AppClientID": "28ru8tl6jlu925gbt4vdjp1lg7",
+				"IdentityPoolId": "us-west-2:88f5009b-4d2a-4b0e-9fa7-4533802fc643",
+				"UserPoolArn": "arn:aws:cognito-idp:us-west-2:911843619969:userpool/us-west-2_WTswjhpHi",
+				"IdentityPoolName": "goodcitizene8d9bc73_identitypool_e8d9bc73__dev",
+				"UserPoolName": "goodcitizene8d9bc73_userpool_e8d9bc73"
+			},
+			"lastPushDirHash": "BM23GUWukSRJbTW1MGP9r2LS6qQ="
+		}
+	},
+	"storage": {
+		"goodcitizenFiles": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-goodcitizen-dev-164722-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storagegoodcitizenFiles"
+			},
+			"lastPushTimeStamp": "2021-11-15T08:47:47.618Z",
+			"output": {
+				"BucketName": "goodcitizenbucket1234567890164722-dev",
+				"Region": "us-west-2"
+			},
+			"lastPushDirHash": "7Aal8pM3UXwK5TMWQOujWFXMkIg="
+		}
+	},
+	"notifications": {
+		"goodCitizenPinPoint": {
+			"service": "Pinpoint",
+			"output": {
+				"Arn": "arn:aws:mobiletargeting:us-west-2:911843619969:apps/810a41346f704dbf8b5faf451b841d2a",
+				"Id": "810a41346f704dbf8b5faf451b841d2a",
+				"Name": "goodCitizenPinPoint-dev",
+				"tags": {},
+				"Region": "us-west-2",
+				"FCM": {
+					"ApplicationId": "810a41346f704dbf8b5faf451b841d2a",
+					"CreationDate": "2021-11-16T08:12:21.051Z",
+					"Enabled": true,
+					"HasCredential": true,
+					"Id": "gcm",
+					"IsArchived": false,
+					"LastModifiedDate": "2021-11-16T08:12:21.051Z",
+					"Platform": "GCM",
+					"Version": 1
+				}
+			},
+			"lastPushTimeStamp": "2021-11-16T07:47:58.498Z"
+		}
+	}
+}

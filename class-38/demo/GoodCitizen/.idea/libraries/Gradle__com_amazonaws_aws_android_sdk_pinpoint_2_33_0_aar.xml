@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-android-sdk-pinpoint:2.33.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a59f5dc0d1cafd401e465ee5d0565d65/aws-android-sdk-pinpoint-2.33.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a59f5dc0d1cafd401e465ee5d0565d65/aws-android-sdk-pinpoint-2.33.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a59f5dc0d1cafd401e465ee5d0565d65/aws-android-sdk-pinpoint-2.33.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-pinpoint/2.33.0/2819ca3866e0ebced217bb986f588ebddb34b3e4/aws-android-sdk-pinpoint-2.33.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
