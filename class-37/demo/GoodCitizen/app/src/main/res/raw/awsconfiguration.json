@@ -1,0 +1,59 @@
+{
+    "UserAgent": "aws-amplify-cli/0.1.0",
+    "Version": "0.1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "AppSync": {
+        "Default": {
+            "ApiUrl": "https://qi64kmxd3fbxhjr6jzqokrb7ve.appsync-api.us-west-2.amazonaws.com/graphql",
+            "Region": "us-west-2",
+            "AuthMode": "API_KEY",
+            "ApiKey": "da2-l64dh2hxr5czpb7jcnup3acdyu",
+            "ClientDatabasePrefix": "goodcitizen_API_KEY"
+        }
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "us-west-2:88f5009b-4d2a-4b0e-9fa7-4533802fc643",
+                "Region": "us-west-2"
+            }
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "us-west-2_WTswjhpHi",
+            "AppClientId": "28ru8tl6jlu925gbt4vdjp1lg7",
+            "Region": "us-west-2"
+        }
+    },
+    "Auth": {
+        "Default": {
+            "authenticationFlowType": "USER_SRP_AUTH",
+            "loginMechanisms": [
+                "EMAIL"
+            ],
+            "signupAttributes": [
+                "EMAIL"
+            ],
+            "passwordProtectionSettings": {
+                "passwordPolicyMinLength": 8,
+                "passwordPolicyCharacters": []
+            },
+            "mfaConfiguration": "OFF",
+            "mfaTypes": [
+                "SMS"
+            ],
+            "verificationMechanisms": [
+                "EMAIL"
+            ]
+        }
+    },
+    "S3TransferUtility": {
+        "Default": {
+            "Bucket": "goodcitizenbucket1234567890164722-dev",
+            "Region": "us-west-2"
+        }
+    }
+}

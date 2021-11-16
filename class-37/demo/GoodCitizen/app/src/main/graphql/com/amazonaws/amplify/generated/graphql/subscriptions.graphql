@@ -1,0 +1,130 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateUser {
+  onCreateUser {
+    id
+    firstName
+    lastName
+    nationalID
+    email
+    number
+    reports {
+      items {
+        id
+        title
+        description
+        userID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    id
+    firstName
+    lastName
+    nationalID
+    email
+    number
+    reports {
+      items {
+        id
+        title
+        description
+        userID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    id
+    firstName
+    lastName
+    nationalID
+    email
+    number
+    reports {
+      items {
+        id
+        title
+        description
+        userID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateProblem {
+  onCreateProblem {
+    id
+    title
+    description
+    userID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateProblem {
+  onUpdateProblem {
+    id
+    title
+    description
+    userID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteProblem {
+  onDeleteProblem {
+    id
+    title
+    description
+    userID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
