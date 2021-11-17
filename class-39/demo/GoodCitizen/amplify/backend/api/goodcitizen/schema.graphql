@@ -1,0 +1,16 @@
+type User @model {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  nationalID: String!
+  email: String!
+  number: String!
+  reports: [Problem] @connection(keyName: "byUser", fields: ["id"])
+}
+
+type Problem @model @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  title: String!
+  description: String
+  userID: ID!
+}

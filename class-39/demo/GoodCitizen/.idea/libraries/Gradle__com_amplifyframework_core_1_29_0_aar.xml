@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amplifyframework:core:1.29.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5654c17eb07bb0aab66ab051f5a342ed/jetified-core-1.29.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5654c17eb07bb0aab66ab051f5a342ed/jetified-core-1.29.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5654c17eb07bb0aab66ab051f5a342ed/jetified-core-1.29.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amplifyframework/core/1.29.0/b9d04293db5b3c8a7cedc1a64701b9595dbd2bd7/core-1.29.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
