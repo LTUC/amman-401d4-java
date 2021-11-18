@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1078998650761",
+    "project_id": "goodcitizen-c7ba7",
+    "storage_bucket": "goodcitizen-c7ba7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078998650761:android:77267b71783f5411339b58",
+        "android_client_info": {
+          "package_name": "com.d4coders.goodcitizen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078998650761-6srj12upp7ev3vkd1unvaibmcue7nt5s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEF89S0QOV8Lb1ANxlN3PjBNSXj4v0QyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078998650761-6srj12upp7ev3vkd1unvaibmcue7nt5s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

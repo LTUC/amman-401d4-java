@@ -1,0 +1,22 @@
+{
+    "appName": "goodCitizenPinPoint",
+    "roleName": "pinpointLambdaRole8434ee67",
+    "cloudformationPolicyName": "cloudformationPolicy8434ee67",
+    "cloudWatchPolicyName": "cloudWatchPolicy8434ee67",
+    "pinpointPolicyName": "pinpointPolicy8434ee67",
+    "authPolicyName": "pinpoint_amplify_8434ee67",
+    "unauthPolicyName": "pinpoint_amplify_8434ee67",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "appId": "810a41346f704dbf8b5faf451b841d2a"
+}
