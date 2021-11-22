@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1079997175648",
+    "project_id": "location-f5aad",
+    "storage_bucket": "location-f5aad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079997175648:android:021c072799bab47cc87005",
+        "android_client_info": {
+          "package_name": "com.recurjun.location"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079997175648-3bbdsov26naa8t91qmpph5p42drps8oa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYU4vi4CJbgSQpNK1HL5CVNQueuuQlrSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079997175648-3bbdsov26naa8t91qmpph5p42drps8oa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
