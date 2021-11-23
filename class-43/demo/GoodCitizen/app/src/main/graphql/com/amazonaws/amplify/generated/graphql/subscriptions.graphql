@@ -1,0 +1,247 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateUser {
+  onCreateUser {
+    id
+    firstName
+    lastName
+    nationalID
+    email
+    number
+    credits
+    reports {
+      items {
+        id
+        title
+        description
+        imageURL
+        userID
+        categoryID
+        latitude
+        longitude
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    id
+    firstName
+    lastName
+    nationalID
+    email
+    number
+    credits
+    reports {
+      items {
+        id
+        title
+        description
+        imageURL
+        userID
+        categoryID
+        latitude
+        longitude
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    id
+    firstName
+    lastName
+    nationalID
+    email
+    number
+    credits
+    reports {
+      items {
+        id
+        title
+        description
+        imageURL
+        userID
+        categoryID
+        latitude
+        longitude
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateProblem {
+  onCreateProblem {
+    id
+    title
+    description
+    imageURL
+    userID
+    categoryID
+    latitude
+    longitude
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateProblem {
+  onUpdateProblem {
+    id
+    title
+    description
+    imageURL
+    userID
+    categoryID
+    latitude
+    longitude
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteProblem {
+  onDeleteProblem {
+    id
+    title
+    description
+    imageURL
+    userID
+    categoryID
+    latitude
+    longitude
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateCategory {
+  onCreateCategory {
+    id
+    title
+    problems {
+      items {
+        id
+        title
+        description
+        imageURL
+        userID
+        categoryID
+        latitude
+        longitude
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateCategory {
+  onUpdateCategory {
+    id
+    title
+    problems {
+      items {
+        id
+        title
+        description
+        imageURL
+        userID
+        categoryID
+        latitude
+        longitude
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteCategory {
+  onDeleteCategory {
+    id
+    title
+    problems {
+      items {
+        id
+        title
+        description
+        imageURL
+        userID
+        categoryID
+        latitude
+        longitude
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}

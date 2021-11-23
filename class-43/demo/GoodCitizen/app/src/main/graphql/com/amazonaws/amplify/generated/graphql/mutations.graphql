@@ -1,0 +1,274 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateUser(
+  $input: CreateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  createUser(input: $input, condition: $condition) {
+    id
+    firstName
+    lastName
+    nationalID
+    email
+    number
+    credits
+    reports {
+      items {
+        id
+        title
+        description
+        imageURL
+        userID
+        categoryID
+        latitude
+        longitude
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateUser(
+  $input: UpdateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  updateUser(input: $input, condition: $condition) {
+    id
+    firstName
+    lastName
+    nationalID
+    email
+    number
+    credits
+    reports {
+      items {
+        id
+        title
+        description
+        imageURL
+        userID
+        categoryID
+        latitude
+        longitude
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteUser(
+  $input: DeleteUserInput!
+  $condition: ModelUserConditionInput
+) {
+  deleteUser(input: $input, condition: $condition) {
+    id
+    firstName
+    lastName
+    nationalID
+    email
+    number
+    credits
+    reports {
+      items {
+        id
+        title
+        description
+        imageURL
+        userID
+        categoryID
+        latitude
+        longitude
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateProblem(
+  $input: CreateProblemInput!
+  $condition: ModelProblemConditionInput
+) {
+  createProblem(input: $input, condition: $condition) {
+    id
+    title
+    description
+    imageURL
+    userID
+    categoryID
+    latitude
+    longitude
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateProblem(
+  $input: UpdateProblemInput!
+  $condition: ModelProblemConditionInput
+) {
+  updateProblem(input: $input, condition: $condition) {
+    id
+    title
+    description
+    imageURL
+    userID
+    categoryID
+    latitude
+    longitude
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteProblem(
+  $input: DeleteProblemInput!
+  $condition: ModelProblemConditionInput
+) {
+  deleteProblem(input: $input, condition: $condition) {
+    id
+    title
+    description
+    imageURL
+    userID
+    categoryID
+    latitude
+    longitude
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateCategory(
+  $input: CreateCategoryInput!
+  $condition: ModelCategoryConditionInput
+) {
+  createCategory(input: $input, condition: $condition) {
+    id
+    title
+    problems {
+      items {
+        id
+        title
+        description
+        imageURL
+        userID
+        categoryID
+        latitude
+        longitude
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateCategory(
+  $input: UpdateCategoryInput!
+  $condition: ModelCategoryConditionInput
+) {
+  updateCategory(input: $input, condition: $condition) {
+    id
+    title
+    problems {
+      items {
+        id
+        title
+        description
+        imageURL
+        userID
+        categoryID
+        latitude
+        longitude
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteCategory(
+  $input: DeleteCategoryInput!
+  $condition: ModelCategoryConditionInput
+) {
+  deleteCategory(input: $input, condition: $condition) {
+    id
+    title
+    problems {
+      items {
+        id
+        title
+        description
+        imageURL
+        userID
+        categoryID
+        latitude
+        longitude
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}

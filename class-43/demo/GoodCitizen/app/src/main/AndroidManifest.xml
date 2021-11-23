@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.d4coders.goodcitizen">
+
+    <!-- Always include this permission -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Include only if your app benefits from precise location access. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GoodCitizen">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+        <service
+            android:name=".data.service.PushListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".ui.news.PowerConnectionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ui.news.BatteryLevelReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+            </intent-filter>
+        </receiver>
+        <!--        profile-->
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:parentActivityName=".ui.dashboard.DashboardActivity"
+            android:exported="false" />
+        <!-- settings -->
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.dashboard.DashboardActivity" /> <!-- observation details -->
+        <activity
+            android:name=".ui.observation.ObservationDetailsActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.dashboard.DashboardActivity" /> <!-- news -->
+        <activity
+            android:name=".ui.news.NewsActivity"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity> <!-- camera -->
+        <activity
+            android:name=".ui.observation.CameraActivity"
+            android:exported="false" /> <!-- email confirmation -->
+        <activity
+            android:name=".ui.auth.EmailConfirmationActivity"
+            android:exported="false" /> <!-- auth -->
+        <activity
+            android:name=".ui.auth.AuthActivity"
+            android:theme="@style/Theme.GoodCitizen.NoActionBar" /> <!-- observation -->
+        <activity
+            android:name=".ui.observation.ObservationCreationActivity"
+            android:parentActivityName=".ui.dashboard.DashboardActivity" /> <!-- splash -->
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- dashboard -->
+        <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:label="" />
+    </application>
+
+</manifest>

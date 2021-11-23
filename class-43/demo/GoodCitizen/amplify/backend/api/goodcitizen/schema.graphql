@@ -1,0 +1,27 @@
+type User @model {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  nationalID: String!
+  email: String!
+  number: String!
+  credits: Int
+  reports: [Problem] @connection(keyName: "byUser", fields: ["id"])
+}
+
+type Problem @model @key(name: "byUser", fields: ["userID"]) @key(name: "byCategoty", fields: ["categoryID"]) {
+  id: ID!
+  title: String!
+  description: String
+  imageURL: String
+  userID: ID!
+  categoryID: ID!
+  latitude: Float
+  longitude: Float
+}
+
+type Category @model {
+  id: ID!
+  title: String!
+  problems: [Problem] @connection(keyName: "byCategoty", fields: ["id"])
+}

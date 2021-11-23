@@ -1,0 +1,8 @@
+{
+    "CreateAPIKey": 1,
+    "AppSyncApiName": "goodcitizen",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-goodcitizen-dev-164722-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/f47bf94af95962bc4d2265115bab8cc8671fb478"
+}
